@@ -4,6 +4,6 @@ jobs:
   dire_bonjour:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2 # Récupère le contenu du dépôt correspondant au commit du workflow en cours
-    - run: sudo apt-get update && sudo apt-get install cowsay
-    - run: cat README.md | cowsay -f vader
+    - run: sudo apt-get update && sudo apt-get install -y cowsay
+    - uses: actions/checkout@v2
+    - run: cat README.md | cowsay
