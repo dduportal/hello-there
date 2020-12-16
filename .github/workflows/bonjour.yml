@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2 # Récupère le contenu du dépôt correspondant au commit du workflow en cours
-    - run: cat README.md # Affiche le contenu du fichier `README.md` à la base du dépôt
+    - run: cat README.md | cowsay -f vader
