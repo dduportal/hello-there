@@ -1,5 +1,5 @@
 .PHONY: all
-all: clean dist
+all: clean dist test
 
 main.html:
 	asciidoctor main.adoc
@@ -12,3 +12,7 @@ dist: main.html
 .PHONY: clean
 clean:
 	rm -rf ./dist/ ./main.html
+
+.PHONY: test
+test: main.html
+	linkchecker --check-extern ./main.html
