@@ -1,6 +1,6 @@
 = Bonjour ENSG !
 
-An introduction to http://asciidoc.org[AsciiDoc].
+An introduction to http://asciido.org[AsciiDoc].
 
 == First Section
 
